@@ -1,11 +1,35 @@
-:root{
-    scroll-behavior: smooth;
+:root {
+  scroll-behavior: smooth;
 }
 
-body{
-    background-image: url(img/background.jpg);
-    color: white;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(img/background.jpg);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #dddddd;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: #151515;
+  flex-wrap: wrap;
 }
 
 .links {
@@ -14,258 +38,90 @@ body{
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-  color: rgb(255, 255, 246);
-}
-
-a:hover {
-  color: #dddddd;
-}
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-nav {
+.pagina1, .pagina2 {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 0 28px;
-  background-color: #151515;
-  color: var(--text-color);
-  height: 60px;
+  gap: 16px;
+  padding: 60px 20px;
+  text-align: center;
 }
 
-
-.foto1{
-display: flex;
-justify-content: flex-end;
-position: absolute;
-top: 20%;
-left: 50%;
-height: 600px;
-
+.foto1, .foto2 {
+  max-width: 100%;
+  height: auto;
 }
 
-.foto2{
-display: flex;
-justify-content: flex-start;
-position: absolute;
-top: 120%;
-left: 5%;
-height: 600px;
-
+.dise {
+  font-size: 24px;
+  font-weight: 400;
 }
 
-.dise{
-display: flex;
-justify-content: flex-start;
-font-size: 30px;
- font-family: 'Montserrat', sans-serif;
-position: absolute;
-top: 40%;
-left: 8%;
-
-}
-
-.j{
-    display: flex;
-justify-content: flex-start;
- font-size: 70px;
-  font-family: 'Montserrat', bold;
+.j, .c, .sobremi, .sobremi2 {
+  font-size: 48px;
   font-weight: bold;
-position: absolute;
-top: 45%;
-left: 8%;
 }
 
-.c{
-    display: flex;
-justify-content: flex-start;
- font-size: 70px;
- font-family: 'Montserrat', bold;
+.bio, .bio2 {
+  font-size: 16px;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.design {
+  text-align: center;
+  font-size: 36px;
+  margin: 80px 0 24px;
+}
+
+.muestras, .muestra2, .muestra3 {
+  max-width: 100%;
+  height: auto;
+  margin: 8px auto;
+  display: block;
+}
+
+.ti {
+  font-size: 36px;
   font-weight: bold;
-position: absolute;
-top: 55%;
-left: 8%;
-}
-
-.bio {
-   display: flex;
-justify-content: flex-start;
-font-size: 18px;
- font-family: 'Montserrat', sans-serif;
-position: absolute;
-top: 70%;
-left: 10%;
-}
-
-
-.sobremi{
-display: flex;
-justify-content: flex-start;
- font-size: 70px;
-  font-family: 'Montserrat', bold;
-  font-weight: bold;
-position: absolute;
-top: 130%;
-left: 30%;
-}
-
-.sobremi2{
-display: flex;
-justify-content: flex-start;
- font-size: 70px;
-  font-family: 'Montserrat', bold;
-  font-weight: bold;
-position: absolute;
-top: 140%;
-left: 30%;
-}
-
-.bio2{
-display: flex;
-justify-content: flex-start;
- font-size: 15px;
-  font-family: 'Montserrat', sans-serif;
-position: absolute;
-top: 160%;
-left: 45%;
-}
-
-.ti{
-display: flex;
-justify-content: flex-start;
- font-size: 50px;
-  font-family: 'Montserrat', bold;
-  font-weight: bold;
-position: absolute;
-top: 340%;
-left: 10%;
-
+  text-align: center;
+  margin-top: 60px;
 }
 
 .infocontact {
-display: flex;
-justify-content: flex-start;
- font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
-position: absolute;
-top: 360%;
-left: 10%;
-
+  text-align: center;
+  font-size: 16px;
+  padding: 16px;
+  max-width: 600px;
+  margin: 0 auto 32px;
 }
 
 .contactos {
-  display: flex;
-  justify-content: center ;
-  background-color: rgb(59, 0, 87);
-  margin: 270px;
-  padding: 100px;
-  border-radius: 15px;
-  text-align: center;
-  width: 90%;
-  max-width: 280px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  text-decoration-color: white;
-  margin-top: 1950px;
-  margin-left: 850px;
-  z-index: 1;
-
-   backdrop-filter: blur(5px) saturate(200%);
-  -webkit-backdrop-filter: blur(13px) saturate(200%);
   background-color: rgba(56, 0, 121, 0.1);
-  border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.3);
-
-  
-}
-
-.si{
-padding: 35px;
-border-radius: 15px;
-margin: 15px;
-
-}
-
-
-.social-icons {
-  display: flex;
-  gap: 16px;
-}
-
-.social-icons svg {
-  width: 32px;
-  height: 32px;
-}
-
-.footer-bottom{
-  background-color: #1f1f1f;
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  padding: 32px;
-}
-
-.footer-bottom ul {
-  list-style: none;
-}
-
-.footer-bottom ul li:first-child {
-  color: white;
-  font-weight: 500;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-}
-
-.copy {
-  padding: 16px;
-  text-align: center;
-}
-
-form button:hover {
-  cursor: pointer;
-  background-color: #c15807b6;
-}
-
-footer {
-  background-color: #121212;
-  color: var(--text-color);
-}
-
-
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  max-width: 800px;
-  margin: auto;
-  padding: 32px;
-}
-
-.contacto {
-  margin: 32px 0;
-  
-}
-
-.contacto form {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  backdrop-filter: blur(5px) saturate(200%);
+  -webkit-backdrop-filter: blur(13px) saturate(200%);
+  padding: 40px;
+  margin: 0 auto 80px;
   max-width: 360px;
-  margin: auto;
+  border-radius: 12px;
+  text-align: left;
 }
 
-input,
-textarea {
+label.si {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
   font-size: 16px;
-  padding: 6px;
-  font-family: inherit;
   border-radius: 8px;
+  border: none;
+  margin-bottom: 16px;
+  font-family: inherit;
 }
 
 form button {
@@ -274,44 +130,7 @@ form button {
   font-weight: bold;
   border: none;
   border-radius: 8px;
-  padding: 8px;
-  margin-top: 8px;
-}
-
-.footers{
-margin-top: 150px;
-
-}
-
-.copy {
-  padding: 16px;
-  text-align: center;
-}
-
-.lam{
-
-color: white;
-}
-
-.pagina2 {
-margin-top: 280px;
-margin-left: auto;
-
-}
-
-.pagina1{
-margin-top: 280px;
-margin-left: auto;
-
-}
-
-.form button {
-  color: white;
-  background-color: #f28212;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  padding: 8px;
+  padding: 10px 16px;
   margin-top: 8px;
 }
 
@@ -320,46 +139,98 @@ form button:hover {
   background-color: #c15807b6;
 }
 
-.design{
-display: flex;
-justify-content: center;
- font-size: 44px;
- font-family: 'Montserrat', bold;
-  font-weight: bold;
-position: absolute;
-top: 230%;
-left: 30%;
-}
-
-.muestras{
-
+.social-icons {
   display: flex;
-justify-content: flex-start;
-position: absolute;
-top: 245%;
-left: 15%;
-height: 450px;
-
+  gap: 16px;
+  margin-top: 16px;
 }
 
-.muestra2{
-
-display: flex;
-justify-content: flex-start;
-position: absolute;
-top: 245%;
-left: 40%;
-height: 450px;
-
+.social-icons svg {
+  width: 32px;
+  height: 32px;
 }
 
-.muestra3{
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: auto;
+  padding: 32px 16px;
+}
 
-display: flex;
-justify-content: flex-start;
-position: absolute;
-top: 245%;
-left: 65%;
-height: 450px;
+.footer-bottom {
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 32px 16px;
+}
 
+.footer-bottom ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-bottom ul li:first-child {
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.copy {
+  text-align: center;
+  padding: 16px;
+}
+
+.footers {
+  margin-top: 80px;
+}
+
+/* ---------------------- */
+/* 📱 MEDIA QUERIES */
+/* ---------------------- */
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links {
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 16px;
+  }
+
+  .j, .c, .sobremi, .sobremi2 {
+    font-size: 32px;
+  }
+
+  .design {
+    font-size: 28px;
+    padding: 0 16px;
+  }
+
+  .ti {
+    font-size: 28px;
+  }
+
+  .muestras, .muestra2, .muestra3 {
+    width: 90%;
+    margin: 12px auto;
+  }
+
+  .footer-top, .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .contactos {
+    padding: 24px;
+    max-width: 90%;
+  }
 }
