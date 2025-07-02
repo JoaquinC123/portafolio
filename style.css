@@ -172,55 +172,47 @@ nav .links a:hover {
 footer {
   background-color: #121212;
   color: var(--text-light);
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
 .footer-top {
   display: flex;
-  justify-content: space-between;
-  max-width: 800px;
-  margin: auto;
-  padding: 32px;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+  font-size: 0.9rem;
 }
 
 .social-icons {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .social-icons svg {
   width: 32px;
   height: 32px;
+  fill: white;
 }
 
-.footer-bottom {
-  background-color: #1f1f1f;
-  display: flex;
-  justify-content: center;
-  gap: 32px;
-  padding: 32px;
-}
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    text-align: left;
+    justify-content: center;
+    gap: 2rem;
+  }
 
-.footer-bottom ul {
-  list-style: none;
-}
+  .hero-text {
+    max-width: 600px;
+    text-align: left;
+  }
 
-.footer-bottom ul li:first-child {
-  color: white;
-  font-weight: 500;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-}
-
-.footer-bottom ul li a {
-  color: var(--text-light);
-  text-decoration: none;
-}
-
-.copy {
-  padding: 16px;
-  text-align: center;
-}
-
-.footers {
-  margin-top: 150px;
+  .sobremi-section {
+    flex-direction: row;
+  }
 }
