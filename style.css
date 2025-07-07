@@ -70,6 +70,7 @@ nav .links a:hover {
 left: 50%;
 }
 
+
 .hero-text {
   margin-top: 2rem;
    display: flex;
@@ -78,6 +79,7 @@ left: 50%;
   align-items: start;
   text-align: start;
   padding: 6rem 4rem;
+  left: -50%;
 
 }
 
@@ -239,11 +241,14 @@ footer {
 .social-icons {
   display: flex;
   gap: 16px;
+
 }
 
-.social-icons svg {
-  width: 32px;
-  height: 32px;
+.icons {
+  display: flex;
+  gap: 16px;
+  width: 60px;
+  height: 60px;
 }
 
 .footer-bottom {
@@ -277,4 +282,114 @@ footer {
 
 .footers {
   margin-top: 150px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 1rem;
+    position: static;
+  }
+
+  .hero-img {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    position: static;
+  }
+
+  .hero-text {
+    margin-top: 1rem;
+    padding: 0;
+    position: static;
+    text-align: center;
+    align-items: center;
+  }
+
+  .j, .c {
+    font-size: 3rem;
+    top: 0;
+    position: static;
+    display: inline;
+  }
+
+  .bio {
+    font-size: 1rem;
+    top: 0;
+    left: 0;
+    position: static;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .sobremi-section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .sobremi-img {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .sobre, .sobre2 {
+    font-size: 4rem;
+    top: 0;
+    left: 0;
+    position: static;
+    text-align: center;
+    justify-content: center;
+  }
+  .sobre3{
+     font-size: 1rem;
+    top: 0;
+    left: 0;
+    position: static;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .galeria {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  .galeria img {
+    width: 100%;
+    margin: auto;
+  }
+
+  .contacto {
+    padding: 2rem 1rem;
+    margin: 1rem;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-bottom {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 0;
+  }
 }
