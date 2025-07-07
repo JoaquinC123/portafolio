@@ -164,13 +164,23 @@ left: -10%;
 .sobre3{
   display: flex;
 position: relative;
-top: -2rem;
+top: -4rem;
 left: 1rem;
 }
 
 .sobremi-text {
   flex: 1;
   min-width: 280px;
+}
+
+.porta{
+
+    display: flex;
+    position: relative;
+  gap: 16px;
+  top: -2rem;
+  width: 12rem;
+
 }
 
 .trabajos {
