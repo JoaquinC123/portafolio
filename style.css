@@ -422,6 +422,15 @@ footer {
   }
 
 
+.porta{
+
+    display: flex;
+    justify-content: center;
+    position: relative;
+  gap: 16px;
+  top: -2rem;
+  width: 12rem;
+
 
 
 
