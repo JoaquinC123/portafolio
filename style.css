@@ -64,7 +64,7 @@ nav .links a:hover {
   flex-direction: none;
   align-items: start;
   text-align: start;
-  padding: 5rem 3rem;
+  padding: 6rem 4rem;
   left: 6rem;
 }
 
@@ -74,7 +74,7 @@ nav .links a:hover {
   flex-direction: end;
   align-items: end;
   position: relative;
-  top: 50%;
+  top: 55%;
 left: 40%;
 }
 
@@ -87,7 +87,7 @@ left: 40%;
   align-items: start;
   text-align: start;
   padding: 6rem 4rem;
-  left: -60%;
+  left: -55%;
 
 }
 
