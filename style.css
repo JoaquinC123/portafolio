@@ -424,16 +424,9 @@ footer {
 
 .porta{
 
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
   text-align: center;
-    position: relative;
-  gap: 16px;
-  top: -2rem;
-  width: 12rem;
-
-
-
 
 
 }
