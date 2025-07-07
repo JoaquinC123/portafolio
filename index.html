@@ -8,6 +8,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+<div id="particles-js"></div>
+
+
   <nav class="navbar">
     <h2><a href="#">Portafolio</a></h2>
     <ul class="links">
@@ -100,6 +103,54 @@
   </footer>
 
 
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: {
+      value: 40,
+      density: {
+        enable: true,
+        value_area: 900
+      }
+    },
+    color: { value: "#a259ff" }, // 💜 morado
+    shape: {
+      type: "circle",
+      stroke: { width: 0, color: "#000" }
+    },
+    opacity: {
+      value: 0.25,
+      random: true
+    },
+    size: {
+      value: 5,
+      random: true
+    },
+    line_linked: {
+      enable: false
+    },
+    move: {
+      enable: true,
+      speed: 0.8,
+      direction: "none",
+      random: true,
+      straight: false,
+      out_mode: "out"
+    }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: false },
+      onclick: { enable: false },
+      resize: true
+    }
+  },
+  retina_detect: true
+});
+</script>
 
 
 
